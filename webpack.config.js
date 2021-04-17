@@ -5,7 +5,12 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  devtool: 'eval-source-map',
+  // source-map
+  // cheap-source-map
+  // cheap-module-source-map
+  // eval-source-map
+  // inline-source-map
+  devtool: 'cheap-module-source-map',
   devServer: {
     historyApiFallback: true,
     contentBase: path.resolve(__dirname, './dist'),
